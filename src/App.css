@@ -1,0 +1,40 @@
+@layer base {
+  @font-face {
+    font-family: "Ragnear";
+    src: url("../src/assets/fonts/Ragnear.woff2") format("woff2"),
+      url("../src/assets/fonts/Ragnear.ttf") format("truetype");
+    font-weight: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Middleburg";
+    src: url("../src/assets/fonts/Middleburg.woff2") format("woff2");
+    font-weight: normal;
+    font-display: swap;
+  }
+}
+
+/* WebKit Scrollbar (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: orangered;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: orangered;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: orangered;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: orangered #000;
+}

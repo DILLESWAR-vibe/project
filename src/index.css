@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@theme {
+  --color-primary: orangered;
+  --color-secondary: #1e2939;
+  --color-background: #000000;
+  --color-white: #ffffff;
+  --default-font-family: "Poppins", sans-serif;
+  --font-ragnear: "Ragnear", sans-serif;
+  --font-middleburg: "Middleburg", sans-serif;
+  --text-20xl: 20rem;
+}
