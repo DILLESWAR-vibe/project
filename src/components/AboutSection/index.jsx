@@ -8,7 +8,7 @@ const AboutSection = () => {
       className="relative h-auto min-h-screen flex flex-col md:flex-row items-center justify-center px-5 py-10 bg-background text-white"
     >
       <h2 className="text-5xl font-ragnear md:hidden text-center mb-6">
-        About Me
+        About Myself
       </h2>
 
       <div className="flex flex-col md:flex-row items-center w-full max-w-7xl bg-secondar  rounded-xl shadow-xl space-y-10 md:space-y-0 md:gap-x-5">
