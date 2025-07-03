@@ -2,6 +2,8 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 16
     commands:
       - npm install
   build:
@@ -11,3 +13,4 @@ phases:
 artifacts:
   files:
     - '**/*'
+  base-directory: build  # Change to "dist" if using Vue or Angular
