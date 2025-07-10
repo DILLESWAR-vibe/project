@@ -62,7 +62,7 @@ export const social_links = [
 // About Section
 
 export const about = {
-  para_1: `Hello everyone! I'm Dilleswar. In today's fast-paced tech
+  para_1: `Hiii everyone! I'm Dilleswar. In today's fast-paced tech
             world, automation and scalability are the keys to success. As a
             DevOps enthusiast with a strong foundation in AWS, I am on a journey
             to bridge the gap between development and operations, ensuring
