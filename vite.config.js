@@ -11,4 +11,8 @@ export default defineConfig({
       woff2: "font/woff2",
     },
   },
+  build: {
+    outDir: "dist",       // ✅ This is the folder to upload to S3
+    assetsDir: "assets"   // ✅ All JS/CSS/images go here, index.html stays in root
+  }
 });
