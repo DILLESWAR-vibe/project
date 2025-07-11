@@ -1,9 +1,9 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
 
-// https://vite.dev/config/
 export default defineConfig({
+  base: '/',
   plugins: [react(), tailwindcss()],
   server: {
     allowedHosts: ["09b8-103-120-51-102.ngrok-free.app"],
@@ -12,7 +12,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: "dist",       // ✅ This is the folder to upload to S3
-    assetsDir: "assets"   // ✅ All JS/CSS/images go here, index.html stays in root
+    outDir: "dist",
+    assetsDir: "assets"
   }
 });
