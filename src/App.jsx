@@ -21,7 +21,7 @@ const ScrollHandler = () => {
 
   useEffect(() => {
     const scrollToTop = () => {
-      if (lenis && lenis.scrollTo) {
+      if (lenis?.scrollTo) {
         lenis.scrollTo(0, { immediate: true, force: true });
       } else {
         window.scrollTo(0, 0);
@@ -54,10 +54,10 @@ const ScrollHandler = () => {
 };
 
 const App = () => {
-  useLenis();
+  useLenis(); // Optional: remove this if you already call useLenis in ScrollHandler
 
   return (
-    <BrowserRouter basename="/project">
+    <Router basename="/project">
       <ScrollHandler />
       <CustomCursor />
 
@@ -65,7 +65,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 };
 
