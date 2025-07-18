@@ -5,14 +5,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "start": "vite",
+  "dev": "vite",
+  "predeploy": "npm run build:gh",
+  "deploy": "gh-pages -d dist",
+  "build": "vite build",
+  "build:gh": "cross-env BASE_PATH=/project vite build",
+  "build:s3": "cross-env BASE_PATH=/ vite build",
+  "lint": "eslint .",
+  "preview": "vite preview"
+ },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@gsap/react": "^2.1.2",
@@ -34,6 +36,7 @@
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "@vitejs/plugin-react": "^4.3.4",
+    "cross-env": "^7.0.3",
     "eslint": "^9.19.0",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.0.0",
