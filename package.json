@@ -7,7 +7,7 @@
   "scripts": {
   "start": "vite",
   "dev": "vite",
-  "predeploy": "npm run build:gh",
+  "predeploy": "npm run build",
   "deploy": "gh-pages -d dist",
   "build": "vite build",
   "build:gh": "cross-env BASE_PATH=/project vite build",
