@@ -54,7 +54,7 @@ const ScrollHandler = () => {
 };
 
 const App = () => {
-  useLenis(); // Optional: remove this if you already call useLenis in ScrollHandler
+  useLenis();
 
   return (
     <Router basename="/project">
