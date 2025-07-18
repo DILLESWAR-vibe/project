@@ -57,7 +57,7 @@ const App = () => {
   useLenis();
 
   return (
-    <Router basename="/project">
+    <Router basename="/project/index.html">
       <ScrollHandler />
       <CustomCursor />
 
