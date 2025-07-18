@@ -57,7 +57,7 @@ const App = () => {
   useLenis();
 
   return (
-    <Router basename="/project/index.html">
+    <BrowserRouter basename="/project">
       <ScrollHandler />
       <CustomCursor />
 
@@ -65,7 +65,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 };
 
